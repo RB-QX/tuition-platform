@@ -32,6 +32,12 @@ dependencies {
     runtimeOnly 'io.jsonwebtoken:jjwt-impl:0.12.5'
     runtimeOnly 'io.jsonwebtoken:jjwt-jackson:0.12.5' // JSON parser
 
+    implementation('com.google.apis:google-api-services-calendar:v3-rev20240717-2.0.0') {
+        exclude group: 'com.google.guava'
+    }
+    implementation 'com.google.auth:google-auth-library-oauth2-http:1.20.0'
+    implementation 'com.google.http-client:google-http-client-jackson2:1.43.3'
+
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
 

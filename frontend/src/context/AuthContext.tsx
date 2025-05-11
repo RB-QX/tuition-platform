@@ -1,7 +1,7 @@
 'use client';
 
 import { createContext, useContext, useState, ReactNode, useEffect } from 'react';
-import api from '@/lib/api';
+import api from '@/app/lib/api';
 
 type User = { email: string } | null;
 
